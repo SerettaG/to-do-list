@@ -1,0 +1,173 @@
+body {
+  background-color: pink !important;
+}
+
+@font-face {
+    font-family: "My Font";
+    src: url("Pixellari.ttf");
+}
+
+body {
+    background: linear-gradient(135deg, #ffc0cb 0%, #ffb6d9 50%, #ffa6c9 100%);
+    font-family: "My Font";
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4a0e2e;
+    letter-spacing: 1.5px;
+}
+
+.progress-container {
+    width: 100%;
+    background: #ffe4f0;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ffb6d9;
+    box-shadow: 0 4px 6px rgba(255, 182, 217, 0.3);
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff69b4, #ff85c0, #ffa6d9);
+    border-radius: 15px;
+    transition: width 0.3s ease;
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
+}
+
+.task {
+    background: #fff0f6;
+    border: 2px solid #ffb6d9;
+    border-radius: 12px;
+    padding: 15px 18px;
+    margin: 10px 0;
+    box-shadow: 0 3px 8px rgba(255, 182, 217, 0.2);
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    color: #b05c87;
+}
+
+h1, h2, h3 {
+    color: #f34d8a;
+    text-shadow: 2px 2px 4px rgba(255, 182, 217, 0.5);
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(135deg, #ff69b4, #ff85c0);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    color: white;
+    font-family: "My Font";
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.3);
+    transition: transform 0.2s;
+    letter-spacing: 1.5px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff85c0, #ffa6d9);
+}
+
+input[type="checkbox"] {
+    accent-color: #ff69b4;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+input[type="text"] {
+    font-family: "My Font";
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 2px solid #ffb6d9;
+    border-radius: 10px;
+    background: #fff0f6;
+    color: #8e064f;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #ff69b4;
+}
+
+#movingImage {
+    display: block;
+    margin: 0 auto 40px auto;
+    width: 150px;
+    height: 150px;
+    pointer-events: none;
+}
+
+.calendar-container {
+    background: white;
+    border: 3px solid #ff69b4;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.3);
+    max-width: 300px;
+    margin: 0 auto 30px auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.calendar-container::before {
+    content: '';
+    display: block;
+    background: linear-gradient(135deg, #ff69b4, #ff85c0);
+    height: 40px;
+    border-bottom: 3px solid #ff69b4;
+}
+
+#date {
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    color: #d4145a;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#newTask {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#addBtn {
+    margin-bottom: 25px;
+}
+
+#tasks {
+    margin-bottom: 25px;
+}
+
+.progress-container {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#progress-label {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}

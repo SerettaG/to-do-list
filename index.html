@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+  body { background-color: pink; }
+    </style>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="icon" type="image/png" href="pink.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <h1>To-Do List: Manage Your Tasks</h1>
+   <div class="calendar-container">
+       <div id="date"></div>
+   </div>
+   <img id="movingImage" src="cute.gif" alt="Moving decoration">
+
+    <input type="text" id="newTask" placeholder="New task...">
+    <button id="addBtn">Add Task</button>
+    <div id="tasks"></div>
+
+   <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <p id="progress-label">0 / 0 tasks done</p>
+
+    <button onClick="increaseProgress()">Increase</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
